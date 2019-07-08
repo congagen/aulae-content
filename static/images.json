@@ -17,7 +17,7 @@
 
             "world_position": false,
             "world_scale": false,
-	        "billboard": true,
+            "billboard": true,
 
             "x_pos":     0,
             "y_pos":     0,
@@ -55,7 +55,7 @@
 
             "world_position": false,
             "world_scale": false,
-	        "billboard": true,
+            "billboard": true,
 
             "x_pos":     -0.5,
             "y_pos":     0,
@@ -74,7 +74,7 @@
 
             "world_position": false,
             "world_scale": false,
-	        "billboard": true,
+            "billboard": true,
 
             "x_pos":     0.5,
             "y_pos":     0,
@@ -82,7 +82,6 @@
 
             "scale":     1.0
         }
-
 
     }
 }
