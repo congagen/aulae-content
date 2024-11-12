@@ -38,15 +38,20 @@ Each content item has the following properties:
             "type": "", // Content type ("image", "gif", "usdz", "text", "marker", "audio")
             "url": "",  // Content URL
             "info": "", // Object information (Action menu item)
-            "chat_url": "", // REST API endpoint (Action menu item)
+            "chat_url": "", // REST API chat endpoint (Action menu item)
+            "world_scale": true, // Toggles distance scaling / static
             "world_position": true, // Controls lat/long/alt vs x/y/z positioning
+            "radius": 100, // The distance from which the object will be visable in the viewport (requires lat/long)
+            "text": "", // Text for text objects (type: "text")
+            "font": "", // Font name for text objects (type: "text")
+            "hex_color": "7122e8", // Color for text and marker objects
             "lat": 0.0, // Object Latitude
             "lng": 0.0, // Object Longitude
             "alt": 0.0, // Object Altitude
             "x_pos": 0.0, // Object X Position (Left/Right)
             "y_pos": 0.0, // Object Y Position (Up/Down)
             "z_pos": 0.0, // Object Z Position (Front/Back)
-            "billboard": true,  // Controls billboard object orientation
+            "billboard": true,  // Toggles billboard object orientation
             "scale": 1.0, // Object scale
             "content_link": "https://www.google.com" // URL to open in a web browser (Action menu item)
         }
@@ -101,7 +106,8 @@ Each content item has the following properties:
 
 ```
 
-### Chat Endpoints
+
+## Chat Endpoints
 
 ****Receiving Chat Messages (AULAE -> REST API)****
 
