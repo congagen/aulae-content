@@ -6,7 +6,7 @@ AULAE supports two ways to provide content:
 * ****Static JSON files:**** You can host a JSON file containing your AR content on a web server.
 * ****REST APIs:****  For more dynamic content, you can create a REST API that AULAE will query.
 
-### JSON Feed Structure
+### Feed Structure
 
 Whether you use a static file or a REST API, the structure of the JSON data remains the same:
 
@@ -34,25 +34,25 @@ Each content item has the following properties:
 {
     "content": {
         "1": {
-            "name": "", // Object name (Chat username and action menu subtitle)
+            "name": "", // Item name (Chat username and action menu subtitle)
             "type": "", // Content type ("image", "gif", "usdz", "text", "marker", "audio")
             "url": "",  // Content URL
-            "info": "", // Object information (Action menu item)
+            "info": "", // Item information (Action menu item)
             "chat_url": "", // REST API chat endpoint (Action menu item)
             "world_scale": true, // Toggles distance scaling / static
             "world_position": true, // Controls lat/long/alt vs x/y/z positioning
-            "radius": 100, // The distance from which the object will be visable in the viewport (requires lat/long)
-            "text": "", // Text for text objects
-            "font": "", // Font name for text objects
-            "hex_color": "7122e8", // Color for text and marker objects
+            "radius": 100, // The distance from which the item will be visable in the viewport (requires lat/long)
+            "text": "", // Text for text items
+            "font": "", // Font name for text items
+            "hex_color": "7122e8", // Color for text and marker items
             "lat": 0.0, // Item Latitude
             "lng": 0.0, // Item Longitude
             "alt": 0.0, // Item Altitude
             "x_pos": 0.0, // Item X Position (Left/Right)
             "y_pos": 0.0, // Item Y Position (Up/Down)
             "z_pos": 0.0, // Item Z Position (Front/Back)
-            "billboard": true,  // Toggles billboard object orientation
-            "scale": 1.0, // Object scale
+            "billboard": true,  // Toggles billboard item orientation
+            "scale": 1.0, // Item scale
             "content_link": "https://www.google.com" // URL to open in a web browser (Action menu item)
         }
     }
