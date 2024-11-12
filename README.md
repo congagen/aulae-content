@@ -33,8 +33,8 @@ Each content item has the following properties:
 ```json
 {
     "content": {
-        "1": {  // Key
-            "name": "", // Object name (Action menu subtitle)
+        "1": {
+            "name": "", // Object name (Chat username and action menu subtitle)
             "type": "", // Content type ("image", "gif", "usdz", "text", "marker", "audio")
             "url": "",  // Content URL
             "info": "", // Object information (Action menu item)
@@ -42,15 +42,15 @@ Each content item has the following properties:
             "world_scale": true, // Toggles distance scaling / static
             "world_position": true, // Controls lat/long/alt vs x/y/z positioning
             "radius": 100, // The distance from which the object will be visable in the viewport (requires lat/long)
-            "text": "", // Text for text objects (type: "text")
-            "font": "", // Font name for text objects (type: "text")
+            "text": "", // Text for text objects
+            "font": "", // Font name for text objects
             "hex_color": "7122e8", // Color for text and marker objects
-            "lat": 0.0, // Object Latitude
-            "lng": 0.0, // Object Longitude
-            "alt": 0.0, // Object Altitude
-            "x_pos": 0.0, // Object X Position (Left/Right)
-            "y_pos": 0.0, // Object Y Position (Up/Down)
-            "z_pos": 0.0, // Object Z Position (Front/Back)
+            "lat": 0.0, // Item Latitude
+            "lng": 0.0, // Item Longitude
+            "alt": 0.0, // Item Altitude
+            "x_pos": 0.0, // Item X Position (Left/Right)
+            "y_pos": 0.0, // Item Y Position (Up/Down)
+            "z_pos": 0.0, // Item Z Position (Front/Back)
             "billboard": true,  // Toggles billboard object orientation
             "scale": 1.0, // Object scale
             "content_link": "https://www.google.com" // URL to open in a web browser (Action menu item)
@@ -72,8 +72,8 @@ Each content item has the following properties:
     "content": {
         "01": {
             "name": "3D Model 1",
-            "type": "usdz",
             "info": "",
+            "type": "usdz",
             "url": "https://s3.amazonaws.com/aulae-examples/content/Usdz/LogoCube.usdz",
             "content_link": "https://www.timsandgren.com",
             "chat_url": "https://suoccr4nm0.execute-api.us-east-1.amazonaws.com/dev",
@@ -88,8 +88,8 @@ Each content item has the following properties:
 
         "02": {
             "name": "3D Model 2",
-            "type": "usdz",
             "info": "",
+            "type": "usdz",
             "url": "https://s3.amazonaws.com/aulae-examples/content/Usdz/LogoCube.usdz",
             "content_link": "https://www.timsandgren.com",
             "chat_url": "https://suoccr4nm0.execute-api.us-east-1.amazonaws.com/dev",
@@ -111,10 +111,8 @@ Each content item has the following properties:
 
 ****Receiving Chat Messages (AULAE -> REST API)****
 
-When the user sends a message, a `POST` request is made to your specified ("chat_url")
-
-endpoint with the following JSON payload:
-
+When the user sends a message, a `POST` request is made to your specified ("chat_url") endpoint with the 
+following JSON payload:
   
 ```json
 
