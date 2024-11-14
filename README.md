@@ -20,7 +20,7 @@ This section provides information about the feed as a whole.
 "info": "",  // Feed description (Lib view feed subtitle)
 "version": 0,  // Version number (Effects updates)
 "updated_utx": 0,  // Unix timestamp of last update (Effects updates)
-"thumb_url": ""  // URL of an image representing the feed ()
+"thumb_url": ""  // URL of an image representing the feed (Visible in feed managemnt views)
 }
 ```
 
