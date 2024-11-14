@@ -18,9 +18,9 @@ This section provides information about the feed as a whole.
 "id": "",  // Unique ID for the feed
 "name": "",  // Feed name
 "info": "",  // Feed description (Lib view feed subtitle)
-"version": 0,  // Version number (Affects updates)
-"updated_utx": 0,  // Unix timestamp of last update (Affects updates)
-"thumb_url": ""  // URL of an image representing the feed
+"version": 0,  // Version number (Effects updates)
+"updated_utx": 0,  // Unix timestamp of last update (Effects updates)
+"thumb_url": ""  // URL of an image representing the feed ()
 }
 ```
 
@@ -34,7 +34,7 @@ Each content item has the following properties:
 {
     "content": {
         "1": {
-            "name": "", // Item name (Chat username and action menu subtitle)
+            "name": "", // Item name (Action menu subtitle and chat username)
             "type": "", // Content type ("image", "gif", "usdz", "text", "marker", "audio")
             "url": "",  // Content URL
             "info": "", // Item information (Action menu item)
@@ -67,7 +67,7 @@ Each content item has the following properties:
     "info":  "USDZ 3D Object",
     "version": 0,
     "updated_utx": 0,
-    "thumb_url": "https://aulae-examples.s3.amazonaws.com/sources/usdz/FeedLogo.png",
+    "thumb_url": "",
 
     "content": {
         "01": {
@@ -75,8 +75,8 @@ Each content item has the following properties:
             "info": "",
             "type": "usdz",
             "url": "https://s3.amazonaws.com/aulae-examples/content/Usdz/LogoCube.usdz",
-            "content_link": "https://www.timsandgren.com",
             "chat_url": "https://suoccr4nm0.execute-api.us-east-1.amazonaws.com/dev",
+            "content_link": "https://www.timsandgren.com",
             "world_position": false,
             "billboard": false,
             "x_pos": 0,
@@ -91,8 +91,8 @@ Each content item has the following properties:
             "info": "",
             "type": "usdz",
             "url": "https://s3.amazonaws.com/aulae-examples/content/Usdz/LogoCube.usdz",
-            "content_link": "https://www.timsandgren.com",
             "chat_url": "https://suoccr4nm0.execute-api.us-east-1.amazonaws.com/dev",
+            "content_link": "https://www.timsandgren.com",
             "world_position": false,
             "billboard": false,
             "x_pos": 0,
