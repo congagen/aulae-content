@@ -3,8 +3,8 @@
 
 AULAE supports two ways to provide content:
 
-* ****Static JSON files:**** You can host a JSON file containing your AR content on a web server.
-* ****REST APIs:****  For more dynamic content, you can create a REST API that AULAE will query.
+* ****Static JSON files:**** JSON files on web servers.
+* ****REST APIs:**** REST APIs that AULAE can query.
 
 ### Feed Structure
 
@@ -20,13 +20,13 @@ This section provides information about the feed as a whole.
 "info": "",  // Feed description (Lib view feed subtitle)
 "version": 0,  // Version number (Effects updates)
 "updated_utx": 0,  // Unix timestamp of last update (Effects updates)
-"thumb_url": ""  // URL of an image representing the feed (Visible in feed managemnt views)
+"thumb_url": ""  // URL of an image representing the feed (Visible in feed managemnt views, Optional)
 }
 ```
 
 ****2. Feed Content (Optional)****
 
-The content field contains an object where each key represents an item to be displayed in the AR viewport and map.
+The content field contains an object where each key represents an item to be displayed in the viewport and map.
 
 Each content item has the following properties:
 
@@ -39,19 +39,19 @@ Each content item has the following properties:
             "url": "",  // Content URL
             "info": "", // Item information (Action menu item)
             "chat_url": "", // REST API chat endpoint (Action menu item)
-            "world_scale": true, // Toggles distance scaling / static
+            "world_scale": true, // Toggles distance based/static scaling
             "world_position": true, // Controls lat/long/alt vs x/y/z positioning
-            "radius": 100, // The distance from which the item will be visable in the viewport (requires lat/long)
+            "radius": 100, // The distance from which the item will be visable in the viewport (Requires lat/long)
             "text": "", // Text for text items
             "font": "", // Font name for text items
             "hex_color": "7122e8", // Color for text and marker items
             "lat": 0.0, // Item Latitude
             "lng": 0.0, // Item Longitude
             "alt": 0.0, // Item Altitude
-            "x_pos": 0.0, // Item X Position (Left/Right)
+            "x_pos": 0.0, // Item X Position (Left/Right) 
             "y_pos": 0.0, // Item Y Position (Up/Down)
             "z_pos": 0.0, // Item Z Position (Front/Back)
-            "billboard": true,  // Toggles billboard item orientation
+            "billboard": true, // Toggles billboard item orientation
             "scale": 1.0, // Item scale
             "content_link": "https://www.google.com" // URL to open in a web browser (Action menu item)
         }
