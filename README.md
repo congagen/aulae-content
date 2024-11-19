@@ -27,7 +27,6 @@ This section provides information about the feed as a whole.
 ****2. Feed Content (Optional)****
 
 The content field contains an object where each key represents an item to be displayed in the viewport and map.
-
 Each content item has the following properties:
 
 ```json
@@ -40,10 +39,11 @@ Each content item has the following properties:
             "info": "", // Item information (Action menu item)
             "chat_url": "", // REST API chat endpoint (Action menu item)
             "world_scale": true, // Toggles distance based/static scaling
-            "world_position": true, // Controls lat/long/alt vs x/y/z positioning
+            "world_position": true, // Toggles lat/long/alt vs x/y/z item positioning
             "radius": 100, // The distance from which the item will be visable in the viewport (Requires lat/long)
             "text": "", // Text for text items
             "font": "", // Font name for text items
+            "extrusion": 1, // Extrusion depth for text items
             "hex_color": "7122e8", // Color for text and marker items
             "lat": 0.0, // Item Latitude
             "lng": 0.0, // Item Longitude
