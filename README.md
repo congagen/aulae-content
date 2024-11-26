@@ -71,7 +71,7 @@ Each content item has the following properties:
 
     "content": {
         "01": {
-            "name": "3D Model 1",
+            "name": "3D Object",
             "info": "",
             "type": "usdz",
             "url": "https://s3.amazonaws.com/aulae-examples/content/Usdz/LogoCube.usdz",
@@ -87,19 +87,21 @@ Each content item has the following properties:
         },
 
         "02": {
-            "name": "3D Model 2",
+            "name": "Text Object",
             "info": "",
-            "type": "usdz",
-            "url": "https://s3.amazonaws.com/aulae-examples/content/Usdz/LogoCube.usdz",
+            "type": "text",
+            "text": "(ﾉ◕ヮ◕)ﾉ*:･ﾟ✧",
+            "extrusion": 2,
+            "url": "",
             "chat_url": "https://suoccr4nm0.execute-api.us-east-1.amazonaws.com/dev",
             "content_link": "https://www.timsandgren.com",
             "world_position": false,
             "billboard": false,
             "x_pos": 0,
             "y_pos": 0,
-            "z_pos": 0,
+            "z_pos": 3,
             "world_scale": false,
-            "scale":  40.0
+            "scale":  1
         }
     }
 }
@@ -115,15 +117,14 @@ When the user sends a message, a `POST` request is made to your specified ("chat
 following JSON payload:
   
 ```json
-
 {
+    "client_username": "", 
     "chat_msg": "",
-    "sid": "",
-    "username": "",
-    "lat": "",
-    "lng": ""
+    "sid": "", 
+    "lat": "0.0", 
+    "lng": "0.0", 
+    "alt": "0.0"  
 }
-
 ```
 
 ****Sending Chat Messages (REST API -> AULAE)****
