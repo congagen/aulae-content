@@ -26,7 +26,7 @@
             "scale": 1.0
         },
 
-	    "Item 2": {
+	"Item 2": {
             "name": "2",
             "type": "image",
             "url": "https://yphnago.com/media/aulae_demos/demo_image.png",
@@ -36,7 +36,7 @@
 
             "world_position": false,
             "world_scale": false,
-	        "billboard": true,
+	    "billboard": true,
 
             "x_pos": 0,
             "y_pos": 0,
@@ -45,7 +45,7 @@
             "scale": 1.0
         },
 
-	    "Item 3": {
+	"Item 3": {
             "name": "3",
             "type": "image",
             "url": "https://yphnago.com/media/aulae_demos/demo_image.png",
@@ -64,7 +64,7 @@
             "scale": 1.0
         },
 
-	    "Item 4": {
+	"Item 4": {
             "name": "4",
             "type": "image",
             "url": "https://yphnago.com/media/aulae_demos/demo_image.png",
