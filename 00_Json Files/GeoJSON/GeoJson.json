@@ -13,12 +13,12 @@
         },
         { 
             "type": "Feature",
-            "geometry": {"type": "Point", "coordinates": [-50.0, -150.0]},
+            "geometry": {"type": "Point", "coordinates": [-150.0, -50.0]},
             "properties": {}
         },
         { 
             "type": "Feature",
-            "geometry": {"type": "Point", "coordinates": [-70.0, -100.0]},
+            "geometry": {"type": "Point", "coordinates": [-100.0, -70.0]},
             "properties": {}
         }
     ]
