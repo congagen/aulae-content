@@ -3,7 +3,7 @@
     "features": [
         { 
             "type": "Feature",
-            "geometry": {"type": "Point", "coordinates": [-50.0, -10.0, 100]},
+            "geometry": {"type": "Point", "coordinates": [-100.0, -70.0, 100]},
             "properties": {
                 "name": "Point A (Optional)",
                 "chat_url": "Url to your chat endpoint (Optional)",
@@ -13,12 +13,7 @@
         },
         { 
             "type": "Feature",
-            "geometry": {"type": "Point", "coordinates": [-150.0, -50.0]},
-            "properties": {}
-        },
-        { 
-            "type": "Feature",
-            "geometry": {"type": "Point", "coordinates": [-100.0, -70.0]},
+            "geometry": {"type": "Point", "coordinates": [-150.0, -50.0, 50]},
             "properties": {}
         }
     ]
