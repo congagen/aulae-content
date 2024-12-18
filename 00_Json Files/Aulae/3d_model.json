@@ -1,29 +1,30 @@
 {
     "id": "1",
-    "name": "3D Model",
-    "info": "USDZ Model",
+    "name": "3D Model Example",
+    "info": "USDZ 3D Object",
     "version": 1,
     "updated_utx": 1,
+    "thumb_url": "https://aulae-examples.s3.amazonaws.com/sources/usdz/FeedLogo.png",
 
     "content": {
-    	"USDZ Model": {
-            "name": "1",
+    	"3D Model": {
+            "name": "01",
+            "type": "usdz",
             "info": "",
 
-            "type": "usdz",
             "url": "https://s3.amazonaws.com/aulae-examples/content/Usdz/LogoCube.usdz",
-
-            "content_link": "https://www.timsandgren.com/aulae",
+            "content_link": "https://www.timsandgren.com",
+            "chat_url": "https://suoccr4nm0.execute-api.us-east-1.amazonaws.com/dev",
 
             "world_position": false,
-            "world_scale": false,
             "billboard": false,
 
             "x_pos": 0,
             "y_pos": 0,
             "z_pos": 0,
 
-            "scale": 1.0
+            "world_scale": false,
+            "scale": 20.0
         }
     }
 }
