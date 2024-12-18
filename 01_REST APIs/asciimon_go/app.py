@@ -5,7 +5,6 @@ from lib import features
 
 
 def lambda_handler(event, context):
-
     if "sid" in event.keys() and "lat" in event.keys() and "lng" in event.keys():
         source_info = "Demo source"
 
@@ -35,6 +34,6 @@ def lambda_handler(event, context):
         return {}
 
 
-if __name__ == "__main__":
-   r = lambda_handler({"lat": -70.123456, "lng": -60.987654, "sid": 1}, "")
-   pprint.pprint(r)
+#if __name__ == "__main__":
+#   r = lambda_handler({"lat": -70.123456, "lng": -60.987654, "sid": 1}, "")
+#   pprint.pprint(r)
