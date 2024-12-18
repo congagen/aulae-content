@@ -7,7 +7,6 @@
             "properties": {
                 "name": "Point A (Optional)",
                 "chat_url": "Url to your chat endpoint (Optional)",
-                "url": "Arbitrary action menu url (Optional)",
                 "description": "Point info (Optional)"
             }
         },
